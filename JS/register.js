@@ -62,7 +62,7 @@ function toggleNewPassword() {
 
 // Redirigir al login
 function goToLogin() {
-  window.location.href = "../Index.html";
+  window.location.href = "../index.html";
 }
 
 // Formatear fecha automáticamente
