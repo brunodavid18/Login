@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro</title>
+  <link rel="stylesheet" href="../CSS/Style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Registrar Usuario</h2>
+    <form id="registerForm">
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Nombres" required />
+      </div>
+      <div class="form-group">
+        <input type="text" id="lastname" placeholder="Apellidos" required />
+      </div>
+      <div class="form-group">
+        <input type="text" id="Identidad" placeholder="Cédula de Identidad" required />
+      </div>
+      <div class="form-group">
+        <input type="text" id="FechaNacimiento" placeholder="DD/MM/AAAA" maxlength="10" required />
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Correo electrónico" required />
+        <span id="emailError" class="error"></span>
+      </div>
+      <div class="form-group">
+        <input type="text" id="newUsername" placeholder="Nombre de usuario" required />
+      </div>
+      <div class="form-group">
+        <input type="password" id="newPassword" placeholder="Contraseña" required />
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="showNewPassword" onclick="toggleNewPassword()" />
+        <label for="showNewPassword">Mostrar contraseña</label>
+      </div>
+      <button type="submit">Crear cuenta</button>
+    </form>
+    <button onclick="goToLogin()" class="register-btn">Volver al login</button>
+    <div class="message" id="registerMessage"></div>
+  </div>
+
+  <script src="../JS/register.js"></script>
+</body>
+</html>
+
